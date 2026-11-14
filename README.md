@@ -1,25 +1,26 @@
-Cadastro de Pacientes com PostgreSQL
+# Cadastro de Pacientes com PostgreSQL
 
-Sobre o projeto
+Projeto de estudo para praticar SQL e PostgreSQL usando um exemplo de cadastro de pacientes.
 
-Esse projeto foi desenvolvido por mim para praticar meus conhecimentos em SQL e PostgreSQL durante meus estudos de Ciência da Computação.
+O banco trabalha com três tabelas: pacientes, médicos e consultas.
 
-A ideia é trabalhar com um banco de dados para cadastro de pacientes e aprender mais sobre como criar e organizar tabelas.
-
-Tecnologias utilizadas
+## Tecnologias
 
 - PostgreSQL
 - SQL
+- pgAdmin
 
-O que pratiquei
+## O que pratiquei
 
-- Criação de tabelas.
-- Utilização de comandos SQL.
-- Organização de dados em um banco de dados.
-- Prática com PostgreSQL.
+- Criação e alteração de tabelas
+- Chaves primárias e estrangeiras
+- Restrições com NOT NULL
+- Renomeação de tabelas
+- Remoção de colunas
+- Consultas com SELECT
 
-Objetivo
+## Arquivo
 
-Meu objetivo com esse projeto é colocar em prática o que estou aprendendo sobre banco de dados, melhorar meus conhecimentos em SQL e continuar evoluindo na área de tecnologia.
+- `dt_base_cadastro de paciente.sql`: comandos usados na criação e alteração das tabelas.
 
-Este é um dos meus projetos de estudo, e pretendo continuar desenvolvendo minhas habilidades em Banco de Dados.
+Projeto desenvolvido durante meus estudos de Ciência da Computação.
