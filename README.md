@@ -1,8 +1,8 @@
 # Cadastro de Pacientes com PostgreSQL
 
-Projeto acadêmico para praticar a criação e alteração de tabelas em um banco de dados de uma clínica.
+Projeto acadêmico para praticar a criação de um banco de dados simples para uma clínica.
 
-O exemplo utiliza três entidades: pacientes, médicos e consultas.
+O exemplo utiliza pacientes, médicos e consultas, com dados fictícios para demonstrar consultas e relacionamentos.
 
 ## Tecnologias
 
@@ -13,25 +13,29 @@ O exemplo utiliza três entidades: pacientes, médicos e consultas.
 ## Conceitos praticados
 
 - Criação de tabelas com `CREATE TABLE`
-- Definição de chaves primárias (`PRIMARY KEY`)
-- Relacionamento entre tabelas com chaves estrangeiras (`FOREIGN KEY`)
-- Restrição `NOT NULL`
-- Alteração de estrutura com `ALTER TABLE`
-- Renomeação de tabela e remoção de coluna
-- Consulta de dados com `SELECT`
+- Chaves primárias (`PRIMARY KEY`)
+- Chaves estrangeiras (`FOREIGN KEY`)
+- Restrições `NOT NULL` e `CHECK`
+- Inserção de dados com `INSERT INTO`
+- Junção de tabelas com `JOIN`
+- Contagem e soma com `COUNT` e `SUM`
+- Agrupamento com `GROUP BY`
+- Filtro de grupos com `HAVING`
+- Ordenação com `ORDER BY`
 
 ## Estrutura
 
-- **pacientes:** dados básicos dos pacientes.
-- **medicos:** nome e especialidade dos médicos.
+- **pacientes:** nome, telefone e data de nascimento.
+- **medicos:** nome e especialidade.
 - **consultas:** data, valor e referências ao paciente e ao médico.
-
-## Arquivo
-
-- `dt_base_cadastro de paciente.sql`: comandos de criação, alteração e consulta das tabelas.
 
 ## Como executar
 
-Abra o pgAdmin, conecte-se a um banco de dados de estudo e execute o script em um banco vazio.
+1. Abra o pgAdmin e conecte-se ao PostgreSQL.
+2. Selecione um banco de dados de estudo vazio.
+3. Abra o Query Tool.
+4. Execute o arquivo `dt_base_cadastro de paciente.sql`.
+
+O script cria as tabelas, insere dados fictícios e executa consultas de exemplo. Execute-o uma única vez em um banco vazio para evitar conflitos.
 
 Projeto de prática desenvolvido durante a graduação.
