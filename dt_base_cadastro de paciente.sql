@@ -3,7 +3,7 @@ CREATE TABLE paciente
 (
     id_pac INT,
     nome_pac VARCHAR(100),
-    tel_pac NUMERIC(10),
+    tel_pac VARCHAR(20),
     data_nasc_pac DATE
 );
 
@@ -23,45 +23,34 @@ CREATE TABLE consultas
     id_med INT
 );
 
--- PRIMARY KEYS
-ALTER TABLE paciente 
+-- Definição das chaves primárias
+ALTER TABLE paciente
 ADD CONSTRAINT pk_id_pac PRIMARY KEY (id_pac);
 
-ALTER TABLE medicos 
+ALTER TABLE medicos
 ADD CONSTRAINT pk_id_med PRIMARY KEY (id_med);
 
-ALTER TABLE consultas 
+ALTER TABLE consultas
 ADD CONSTRAINT pk_id_cons PRIMARY KEY (id_cons);
 
--- NOT NULL
-ALTER TABLE paciente 
+-- Restrição para exigir o nome do paciente
+ALTER TABLE paciente
 ALTER COLUMN nome_pac SET NOT NULL;
 
--- FOREIGN KEYS (corrigidas)
-ALTER TABLE consultas 
+-- Relacionamentos entre consultas, pacientes e médicos
+ALTER TABLE consultas
 ADD CONSTRAINT fk_cons_pac FOREIGN KEY (id_pac)
 REFERENCES paciente (id_pac);
 
-ALTER TABLE consultas 
+ALTER TABLE consultas
 ADD CONSTRAINT fk_cons_med FOREIGN KEY (id_med)
 REFERENCES medicos (id_med);
 
--- RENOMEAR TABELA
+-- Renomear tabela
 ALTER TABLE paciente RENAME TO pacientes;
 
--- REMOVER COLUNA
+-- Remover coluna de telefone (exercício de ALTER TABLE)
 ALTER TABLE pacientes DROP COLUMN tel_pac;
 
--- CONSULTA
+-- Consultar os pacientes
 SELECT * FROM pacientes;
-
-
-
-
-
-
-
-
-
-
-
