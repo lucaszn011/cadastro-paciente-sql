@@ -1,8 +1,8 @@
 # Cadastro de Pacientes com PostgreSQL
 
-Projeto de estudo para praticar SQL e PostgreSQL usando um exemplo de cadastro de pacientes.
+Projeto acadêmico para praticar a criação e alteração de tabelas em um banco de dados de uma clínica.
 
-O banco trabalha com três tabelas: pacientes, médicos e consultas.
+O exemplo utiliza três entidades: pacientes, médicos e consultas.
 
 ## Tecnologias
 
@@ -10,17 +10,28 @@ O banco trabalha com três tabelas: pacientes, médicos e consultas.
 - SQL
 - pgAdmin
 
-## O que pratiquei
+## Conceitos praticados
 
-- Criação e alteração de tabelas
-- Chaves primárias e estrangeiras
-- Restrições com NOT NULL
-- Renomeação de tabelas
-- Remoção de colunas
-- Consultas com SELECT
+- Criação de tabelas com `CREATE TABLE`
+- Definição de chaves primárias (`PRIMARY KEY`)
+- Relacionamento entre tabelas com chaves estrangeiras (`FOREIGN KEY`)
+- Restrição `NOT NULL`
+- Alteração de estrutura com `ALTER TABLE`
+- Renomeação de tabela e remoção de coluna
+- Consulta de dados com `SELECT`
+
+## Estrutura
+
+- **pacientes:** dados básicos dos pacientes.
+- **medicos:** nome e especialidade dos médicos.
+- **consultas:** data, valor e referências ao paciente e ao médico.
 
 ## Arquivo
 
-- `dt_base_cadastro de paciente.sql`: comandos usados na criação e alteração das tabelas.
+- `dt_base_cadastro de paciente.sql`: comandos de criação, alteração e consulta das tabelas.
 
-Projeto desenvolvido durante meus estudos de Ciência da Computação.
+## Como executar
+
+Abra o pgAdmin, conecte-se a um banco de dados de estudo e execute o script em um banco vazio.
+
+Projeto de prática desenvolvido durante a graduação.
